@@ -1,0 +1,45 @@
+Git is een programma om makkelijk en overzichtelijk versies van je projecten bij te houden.
+Daarnaast is het ook heel handig als je samen aan een project werkt.
+Met git maak je commits (soort snapshots) die jou bestanden opslaan.
+Als je dan per ongeluk iets verwijderd, kun je terug gaan naar die versies.
+Ook heeft git branches. Die zorgen ervoor dat je aan meerdere dingen tegelijk kan werken.
+Met meerdere branches heb je uiteenlopende versies van je programma.
+Later kun je die versies samenvoegen met een 'merge'.
+
+Om een nieuwe folder te maken gebruik je mkdir en dan cd om daar naar toe te gaan.
+Dan kun je git init doen. Maak een nieuw bestand met vim en sla het op.
+Als je git status doet zie je jouw bestand in het rood.
+Om het toe te voegen aan de volgende commit gebruik je git add.
+Dan kun je een commit maken. Als je in vim zit kun je een korte beschrijving schrijven en dan ':x' doen.
+Als je git log doet, kun je jouw commit zien en met git show kun je zien wat je hebt toegevoegd.
+Gefeliciteerd, je hebt je eerste commit!!!!
+
+
+commando's terminal/git bash:
+mkdir 'naam'        make directory      maakt een nieuwe folder met de gegeven naam
+cd 'directory'      change directory    gaat naar de geven folder
+ls                  list                geeft een lijst van alle bestanden in die folder
+
+
+git commando's:
+git init            initialize          maakt een .git zodat je kunt beginnen met git
+git status          status              geeft nuttige informatie over de status
+
+git add 'bestand'   add                 voegt het gegeven bestand toe aan de volgende commit
+git commit          commit              gaat naar vim voor een beschrijving en maakt daarna een commit
+
+git log             log                 laat de geschiedenis van de commits zien
+git show 'branch|hash' show             laat de gegeven commit zien, dat kan een branch naam of de code van log zijn
+
+git branch          branch              laat alle branches zien
+git branch 'naam'   branch              maakt een nieuwe branch met de gegeven naam
+git checkout 'branch' checkout          gaat naar de gegeven branch en diens commit
+
+
+vim:
+vim 'bestand'       visual improved     Text editor voor nieuw of bestaand bestand
+i                   insert              gaat naar insert mode zodat je kan schrijven
+:q                  quit                sluit vim af
+:q!                 force quit          sluit vim af ook als je het niet opslaat
+:w                  write               slaat het bestand op
+:x                  save and exit       slaat het bestand op en sluit vim af
