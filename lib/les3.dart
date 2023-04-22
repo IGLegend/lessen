@@ -25,8 +25,8 @@ void main (){
       print("Tot ziens!");
   }
 
-  // In plaats van een while loop kun je ook een do while loop:
-  String s; // als je geen beginwaarde geeft dan maak je alleen de variabel
+  // In plaats van een while loop kun je ook een do while loop gebruiken:
+  String s; // als je geen beginwaarde geeft, dan maak je alleen de variabel
   // als je die later zou willen gebruiken moet je ervoor zorgen dat het een waarde krijgt
   do {
     s = stdin.readLineSync()!; // Hiermee zetten we dus een waarde voor de variabel s,
@@ -36,7 +36,7 @@ void main (){
     if (s == "dag")
       print("Tot ziens!");
   } while (s!="done"); // let op hier moet wel een ';'
-  // Het verschil tussen dit en een gewone while loop is dat dit eerst de do doet
+  // Het verschil tussen dit en een gewone while loop is dat dit eerst de 'do' doet
   // en dan pas de conditie checkt
   // Terwijl een while loop nul keer runt als de conditie niet waar is, bijvoorbeeld:
   while (5!=5){
@@ -60,20 +60,21 @@ void main (){
   // Een for-loop bestaat uit drie delen: de initializer, de conditie en de herhaling.
   // De initializer runt een keer voordat de loop begint,
   // de conditie is de conditie van de while loop en de herhaling runt na elke herhaling van de loop
-  for (int teller=1; teller<=100; teller++){ // Dart vindt het niet erg dat je twee keer dezelfde variabel hebt,
-    // omdat deze variabel bij de for-loop hoort, je kunt het dus ook niet buiten de loop gebruiken
+  for (int teller=1; teller<=100; teller++){ // Dart vindt het niet erg dat je hier twee keer dezelfde variabel hebt,
+    // normaal gesproken zou dit een error geven, omdat we hierboven al een teller hebben gemaakt
+    // maar omdat deze variabel bij de for-loop hoort, kun je het dus ook niet buiten de loop gebruiken
 
     // Dit doet precies hetzelfde als het vorige programma, maar je schrijft het eenvoudiger
-    print("Hallo, teller$teller");
+    print("Hallo, teller: $teller");
   } // Ook kun je hierdoor die teller++ niet vergeten.
 
 
 
-  // Je hebt al geleerd over variabelen, daarmee kun je een ding bewaren.
-  // Met lijsten kun je meerdere waarden in een variabel bewaren
-  // Het type van een lijst is List en je maakt het dus zoals elk ander variabel
+  // Je hebt al geleerd over variabelen, daarmee kun je één ding bewaren.
+  // Met lijsten kun je meerdere waarden in één variabel bewaren
+  // Het type van een lijst is 'List' en je maakt het dus zoals elk ander variabel
   List lijst = ["Hallo",15.6,"Allemaal"]; // Net zoals je '""' gebruikt voor tekst,
-  // gebruik je '[]' om lijsten te maken daarin kun je waarden met komma's ertussen zetten
+  // gebruik je '[]' om lijsten te maken. Daarin kun je waarden met komma's ertussen zetten
 
   // Om te lezen uit een lijst gebruik je '[index]'
   print(lijst[1]); // Let op computers beginnen met tellen bij 0,
@@ -95,20 +96,20 @@ void main (){
                       // groet altijd een String is en getal altijd een double
 
   // Om dit probleem bij lijsten om op te lossen kun je extra informatie geven over de type
-  // In plaats van List kun je List<E> doen
+  // In plaats van 'List' kun je 'List<E>' doen
   List<String> typeLijst= ["Hier","alleen","strings"];
   // Die '<E>' is extra informatie die doorgegeven wordt aan List
   // Zo weet dart voordat hij het programma runt dat 'typeLijst[2]' een string is:
   print(typeLijst[2]+15.6); //Error, want hij weet dat typeLijst alleen strings heeft
   // Wat er eigenlijk gebeurt als je List zonder '<E>' erbij doet,
   // is dat hij er zelf List<dynamic> van maakt.
-  // Dat is een speciale type dat alles accepteert en pas bij het runnen errors geeft
+  // 'dynamic' is een speciale type dat alles accepteert en pas bij het runnen errors geeft
 
   // We gaan hier later meer op in, je hoeft dit dus nog niet helemaal te snappen.
 
 
   // Er bestaat ook een andere for-loop: die werkt met lijsten:
-  for (String s in typeLijst){ //Deze for-loop bestaat uit een variabel (s), in en dan een lijst
+  for (String s in typeLijst){ //Deze for-loop bestaat uit een variabel (s), 'in' en dan een lijst
     // Binnen zo een for-loop zal de variabel (s) steeds de volgende element uit het lijst hebben
     print(s); //Dit is heel handig om iets met de hele lijst te doen, zoals printen
   }

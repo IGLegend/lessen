@@ -1,3 +1,4 @@
+// Dit is het bestand met de eerste lessen van Dart die ook in whatsapp staat.
 import 'dart:io';
 import 'dart:math';
 

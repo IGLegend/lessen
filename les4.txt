@@ -1,8 +1,9 @@
 Git is een programma om makkelijk en overzichtelijk versies van je projecten bij te houden.
-Daarnaast is het ook heel handig als je samen aan een project werkt.
+Daarnaast is git ook heel handig voor als je samen aan een project werkt.
 Met git maak je commits (soort snapshots) die jou bestanden opslaan.
 Als je dan per ongeluk iets verwijderd, kun je terug gaan naar die versies.
 Ook heeft git branches. Die zorgen ervoor dat je aan meerdere dingen tegelijk kan werken.
+Dit is handig als je meerdere dingen tegelijk wil doen, maar vooral als je samenwerkt met anderen.
 Met meerdere branches heb je uiteenlopende versies van je programma.
 Later kun je die versies samenvoegen met een 'merge'.
 
@@ -17,7 +18,7 @@ Gefeliciteerd, je hebt je eerste commit!!!!
 
 commando's terminal/git bash:
 mkdir 'naam'        make directory      maakt een nieuwe folder met de gegeven naam
-cd 'directory'      change directory    gaat naar de geven folder
+cd 'directory'      change directory    gaat naar de gegeven folder
 ls                  list                geeft een lijst van alle bestanden in die folder
 
 
